@@ -25,3 +25,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Endpoints
+
+/home dónde se listan las casas en forma de banderines para consultar los personajes de dicha casa a través de la llamada al URL /personages
+
+/students para consultar el listado de los estudiantes de hogwarts.
+
+/staff para consultart el listado de profesores de hogwarts.
