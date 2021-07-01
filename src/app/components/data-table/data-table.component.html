@@ -1,0 +1,29 @@
+<table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col" *ngFor="let col of thead; index as i" [ngClass]="{textCenter: i === 0}">{{col.colunm | titlecase}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr [hidden]="(!loading && length===0)">
+          <th></th>
+          <th></th>
+          <th style="text-align: center">
+            <div class="spinner-border" role="status"></div>
+          </th>
+          <th></th>
+          <th></th>
+      </tr>
+      <tr *ngFor="let data of tbody; index as i" [hidden]="(loading && length>0)">
+        <th scope="row">{{i+1}}</th>
+        <th class="textCenter">
+            <img [src]="data.image" width="80px" height="100px" class="round"/>
+        </th>
+        <th scope="row">{{data.name}}</th>
+        <th scope="row">{{data.patronus}}</th>
+        <th scope="row">{{ _calculateAge(data.yearOfBirth) }}</th>
+        
+      </tr>
+    </tbody>
+  </table>

@@ -1,0 +1,12 @@
+<div style="padding: 100px 50px 0px 0px;">
+    <div class="d-flex flex-row">
+        <div class="col-4 align-self-center" style="text-align: center;">
+            <h1>{{houseName.name | titlecase}}</h1>
+            <img [src]="logo" height="360px" width="360px" />
+        </div>
+
+        <div class="col-8 align-self-center">
+            <app-data-table [thead]="thead" [tbody]="tbody" [loading]="loading" [length]="length"></app-data-table>
+        </div>
+    </div>
+</div>

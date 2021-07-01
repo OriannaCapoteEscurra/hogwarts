@@ -1,0 +1,35 @@
+.ribbon{
+    transition: transform .8s;
+    cursor: pointer;
+}
+
+.ribbon:hover {
+    -webkit-transform:scale(1.5);
+    -moz-transform:scale(1.5);
+    -ms-transform:scale(1.5);
+    -o-transform:scale(1.5);
+    transform:scale(1.5);
+}
+
+.margin-content{
+    margin: 50px;
+}
+
+.triangulo-equilatero-bottom {
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-top: 100px solid transparent;
+    border-left: 100px solid transparent;
+    border-bottom: 100px solid #232428;
+    position: absolute;
+    bottom: 0;
+}
+
+.ribbon{
+    position: relative;
+}
+
+.house-logo{
+    border-radius: 20px 20px 0px 0px;
+}
